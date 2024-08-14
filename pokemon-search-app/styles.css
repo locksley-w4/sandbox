@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --black: #202020;
+  --red: rgb(227, 64, 64);
+}
+body {
+  background-color: var(--red);
+}
+.container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  padding: 25px;
+  background-color: var(--black);
+  color: var(--red);
+  border-radius: 25px;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+.input-field {
+  flex-basis: 60%;
+  padding: 5% 0 0 5%;
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 70%;
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: aliceblue;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: var(--red);
+  color: var(--black);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+button#search-btn {
+  margin-left: 20px;
+  flex: 1 1 auto;
+}
+.gen-info {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 25px 0 0;
+}
+h2.name {
+  text-align: right;
+  color: aliceblue;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+span#pokemon-name {
+  margin-right: 5px;
+}
+.avatar-container {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  object-position: center;
+  margin-left: auto;
+}
+.avatar-container img {
+  max-width: 100%;
+  height: 100%;
+}
+table#stats {
+  display: block;
+  flex: 0 0 100%;
+}
+tbody {
+  display: block;
+  width: 100%;
+}
+tr {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--red);
+}
+tr:last-child{
+    border-bottom: none;
+}
+td {
+  display: block;
+  padding: 5px;
+}
+td:first-child {
+  width: 29%;
+  text-transform: capitalize;
+}
+td:last-child {
+  width: 70%;
+  text-align: right;
+}
